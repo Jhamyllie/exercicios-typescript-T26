@@ -1,9 +1,13 @@
 function contadorDeOcorrencia(texto: string, letra: string): number {
+    let i = 0;
     let contador = 0;
-    for(let i = 0; i < texto.length; i++){
+
+    while(texto[i] !== undefined){
         if(texto[i] === letra){
             contador ++
         }
+
+        i++
     }
 
     return contador;
